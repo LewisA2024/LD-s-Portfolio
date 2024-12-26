@@ -1,1 +1,98 @@
 
+<!DOCTYPE html>
+<!--porfolio page (front page)-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD's Portfolio</title>
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imagesFolder/897991.png">
+
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link al stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- primera parte del portfolio -->
+    <section id="section01">
+        <h1>HELLO, MY NAME IS LEWIS DÍAZ ACEVEDO</h1>
+        <p>Explora mi trabajo y lo aprendido</p>
+    </section>
+
+    <!-- seccion texto -->
+    <section id="intro-text">
+        <h3>Bienvenidos a mi portfolio. Aquí presentaré uno de mis proyectos, 
+            mi resume profesional y un video de lo aprendido en clase ᓚ₍⑅^..^₎ 
+        </h3>
+    </section>
+
+    <!-- Imagen propia -->
+    <section id="my-photo" class="text-center py-3">
+        <img src="imagesFolder/Screenshot 2024-12-13 at 6.36.42 PM.png" alt="Lewis Díaz Acevedo" class="img-fluid rounded-circle" style="max-width: 170px; height: auto;">
+    </section>
+
+    <!-- seccion de projectos interactivos a otras paginas -->
+    <section id="projects">
+        <div class="project">
+            <a href="paginaux.html">
+                <img src="imagesFolder/apple-macbook-air-m1-2020-1626677621.jpg" alt="Project 1">
+            </a>
+            <h5>Ux-UI</h5>
+        </div>
+
+        <div class="project">
+            <a href="paginaVideo.html">
+                <img src="imagesFolder/apple-macbook-air-m1-2020-1626677621.jpg" alt="Project 2">
+            </a>
+            <h5>video explicativo</h5>
+        </div>
+
+        <div class="project">
+            <a href="paginaResume.html">
+                <img src="imagesFolder/apple-macbook-air-m1-2020-1626677621.jpg" alt="Project 3">
+            </a>
+            <h5>Resume profesional</h5>
+        </div>
+    </section>
+
+    <!-- Contact  -->
+    <section id="contact">
+
+        <h2>Contáctame</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div id="responseMessage"></div> <!-- Aquí se mostrará la respuesta después del envío -->
+    </section>
+
+
+    <!-- Content -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Soy un estudiante de primer año, pero de segundo bachillerato en Ciencias de la Computación, con planes de seguir un futuro como ingeniero de datos o en computación en la nube, ya que estos campos son los que más me atraen para mi desarrollo profesional.
+        </p>
+    </section>
+
+    <!-- link a javascript externo-->
+    <script src="script.js"></script>
+</body>
+</html>
