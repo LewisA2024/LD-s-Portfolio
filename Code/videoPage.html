@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--page where my video will be at-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imagesFolder/897991.png">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- body Section -->
+    <section id="section01" class="text-center text-white d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesFolder/europeana-CnQBNEwsagI-unsplash.jpg'); height: 40vh; background-size: cover; background-position: center;">
+        <h1 class="display-4">Video Informativo</h1>
+    </section>
+
+    <!-- descripcion del projecto-->
+    <section id="intro-text" class="text-center p-4 bg-light">
+        <h5 class="mb-0">
+            Aquí presento lo aprendido en la clase de Front End con el profesor José A. Rodríguez Ortega.
+        </h5>
+        <p>Haga click en la imagen para poder apreciar el video</p>
+    </section>
+
+    <!-- Project Image Section -->
+    <section id="projects" class="d-flex justify-content-center p-4">
+        <div class="project text-center" id="video-container">
+            <img src="imagesFolder/here-are-some-wallpapaer-i-made-fell-free-to-share-ideas-of-v0-7buzb5xztqhb1.webp" alt="Aquí va el video" class="img-fluid rounded shadow-lg" id="video-thumbnail" style="cursor: pointer;">
+            
+            <!-- Video element (al principio escondido)-->
+            <div id="video-player" style="display: none;">
+                <video width="100%" controls>
+                    <source src="video/videoexplicativo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="mb-3">About Me</h2>
+        <p class="lead">
+            Soy un estudiante de primer año, pero de segundo bachillerato en Ciencias de la Computación, con planes de seguir un futuro como ingeniero de datos o en computación en la nube, ya que estos campos son los que más me atraen para mi desarrollo profesional.
+        </p>
+    </section>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
